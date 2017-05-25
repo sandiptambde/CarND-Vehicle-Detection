@@ -1,4 +1,4 @@
-## Writeup Template
+## Writeup
 ---
 
 **Vehicle Detection Project**
@@ -12,15 +12,6 @@ The goals / steps of this project are the following:
 * Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
 * Estimate a bounding box for vehicles detected.
 
-[//]: # (Image References)
-[image1]: ./examples/car_not_car.png
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
-[video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -31,6 +22,16 @@ The goals / steps of this project are the following:
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  
 
 You're reading it!
+
+Files:
+
+a. [run.py](./run.py)  --> Run the pipeline & save the processed video
+
+b. [model_save.py](./model_save.py)  --> Train & save the classifier
+
+c. [functions.py](./functions.py)  --> Supported functions
+
+d. [model_performance.py](./model_performance.py ) --> Check performance of classifier with different feature properties
 
 ### Histogram of Oriented Gradients (HOG)
 
@@ -131,7 +132,7 @@ Following are some result on different test images with histogram
 ### Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
-Here's a [link to my video result](./project_video_output.mp4)
+Here's a [link to my video result](./project_video_out.mp4)
 
  
 #### 2. Describe how (and identify where in your code) you implemented some kind of filter for false positives and some method for combining overlapping bounding boxes.
